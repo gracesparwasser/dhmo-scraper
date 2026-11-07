@@ -25,6 +25,7 @@ The scraper uses `concurrent.futures.ThreadPoolExecutor` to download multiple re
 During one test, I recorded the following results:
 
 1 Thread Execution Time: 2.050 seconds
+
 4 Threads Execution Time: 0.622 seconds
 
 Using four threads resulted in a speedup of approximately 3.30x.
@@ -38,5 +39,5 @@ The scraper uses map(), filter(), and lambda functions to process URLs and repor
 - map() transforms relative links into complete URLs.
 - filter() selects links to research reports and removes invalid results.
 
-Functional programming makes data processing more concise and organized, but it does not necessarily improve execution speed. The main performance improvement comes from using concurrent HTTP requests.½0
+Functional programming makes data processing more concise and organized, but it does not necessarily improve execution speed. The main performance improvement comes from using concurrent HTTP requests.
 
